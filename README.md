@@ -7,7 +7,7 @@
 * We needed a quick-to-use **database debugging tool** for a vey specific problem: to help in a daily check about the information being sent from the mailing program to the CRM, and in the inverse direction.
 * This script creates lists with the common and missing email addresses to be investigated. It can be useful for other purposes as well.
 * Besides unique **email addresses** it can compare **sha256 hashes** or **Spanish ID numbers**.
-* Parsing and comparing a 41MB file with 400.000 email adresses against another 36MB file with 350.000 email addresses takes 9 seconds in a fast laptop.
+* Parsing and comparing a 41MB file with 400.000 email addresses against another 36MB file with 350.000 email addresses takes 9 seconds in a fast laptop.
 
 ## How to use it
 
@@ -52,8 +52,8 @@ In both fileA.csv and fileB.csv : 214 emails
 And the script always creates 3 files in the current folder with the results:
 
 1. *in-a-but-not-in-b.txt*
-* *in-b-but-not-in-a.txt*
-* *in-both-a-and-b.txt*
+2. *in-b-but-not-in-a.txt*
+3. *in-both-a-and-b.txt*
 
 The filenames describe it's content and running the script again will overwrite this 3 files.
 
@@ -62,3 +62,7 @@ Open this files with your plain/code text editor and investigate the inconsisten
 ## Install
 
 Currently this script is provided as source code in **[Go](https://golang.org/dl/)**. You can easily download it and compile. Still if some people find it useful I can compile executables and add the links here.
+
+## Note
+
+This script works by parsing both text-based files with a regular expression rule to find emails, sha256 hashes or ID numbers. The advantage of using regular expressions to parse the files is speed, as the user doesn't has to adjust the files format. The disadvantage is that sometimes certain email addresses aren't grabbed. Mostly it will be invalid email addresses, but the script report will not match the CRM report.
