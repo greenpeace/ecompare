@@ -62,12 +62,12 @@ Open this files with your plain/code text editor and investigate the inconsisten
 ## Install
 
 1. Download the [latest version of the binary code](https://github.com/greenpeace/ecompare/releases/) for your operating system to your desktop folder.
-2. Unzip it to the desktop folder. *(Optionally copy the executable file to a folder in your [path](https://goo.gl/oLzTGw) )*
+2. Unzip it to the desktop folder. *(Optionally copy the executable file to a folder in your [path](https://goo.gl/oLzTGw))*
 3. To test your install, open the command line, go to the desktop folder and test it with the command: 
   * `./ecompare --help` *(Mac or Linux)*
   * `./ecompare.exe --help` *(Windows)*
 
-This script is also provided as [source code](https://github.com/greenpeace/ecounter/) in [Go](https://golang.org/dl/).
+This script is also provided as [source code](https://github.com/greenpeace/ecompare/) in [Go](https://golang.org/dl/).
 
 ## Note
 
