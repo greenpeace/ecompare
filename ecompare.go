@@ -62,7 +62,7 @@ func main() {
 		stringToFile("in-a-but-not-in-b.txt", strings.Join(notInB, "\n"))
 		stringToFile("in-both-a-and-b.txt", strings.Join(inBothAB, "\n"))
 
-		fmt.Println("\nWHAT HAPPENED?")
+		fmt.Printf("\nWHAT HAPPENED?\n\n")
 		fmt.Println("File A:", *filenameA)
 		fmt.Println("File B:", *filenameB)
 		fmt.Println("Parsed", *data, "in", *filenameA, ":", len(aMap))
@@ -70,11 +70,7 @@ func main() {
 		fmt.Println("In", *filenameB, "but not in", *filenameA, ":", len(notInA), *data)
 		fmt.Println("In", *filenameA, "but not in", *filenameB, ":", len(notInB), *data)
 		fmt.Println("In both", *filenameA, "and", *filenameB, ":", len(inBothAB), *data)
-		fmt.Println("Check the files:")
-		fmt.Println("in-b-but-not-in-a.txt")
-		fmt.Println("in-a-but-not-in-b.txt")
-		fmt.Println("in-both-a-and-b.txt")
-		fmt.Println("for more information.\n")
+		fmt.Printf("\nCheck the files:\nin-b-but-not-in-a.txt\nin-a-but-not-in-b.txt\nin-both-a-and-b.txt\nfor more information.\n\n")
 	}
 
 }
