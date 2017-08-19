@@ -45,13 +45,13 @@ func searchInStringToMap(total string, expression string) map[string]bool {
 func Compare(a map[string]bool, b map[string]bool) (map[string]bool, map[string]bool) {
 	defer timeTrack(time.Now(), "Compare")
 	var y bool
-	for key, _ := range a {
+	for key := range a {
 		_, y = b[key]
 		if y == true {
 			a[key] = true
 		}
 	}
-	for key, _ := range b {
+	for key := range b {
 		_, y = a[key]
 		if y == true {
 			b[key] = true
