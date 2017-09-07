@@ -67,7 +67,15 @@ Open this files with your plain/code text editor and investigate the inconsisten
   * `./ecompare --help` *(Mac or Linux)*
   * `./ecompare.exe --help` *(Windows)*
 
-This script is also provided as [source code](https://github.com/greenpeace/ecompare/) in [Go](https://golang.org/dl/).
+## Install from the source code
+
+This script is also provided as [source code](https://github.com/greenpeace/ecompare/) in [Go](https://golang.org/dl/). To install:
+
+```bash
+go get github.com/greenpeace/ecompare
+go install github.com/greenpeace/ecompare
+```
+
 
 ## Note
 
