@@ -3,6 +3,7 @@ package main
 import (
 	"io/ioutil"
 	"log"
+	"os"
 	"regexp"
 	"strings"
 	"time"
@@ -79,4 +80,11 @@ func stringToFile(fileName string, dat string) {
 	if err != nil {
 		panic(err)
 	}
+}
+
+// trashFiles deletes files created by ecompare
+func trashFiles() {
+	os.Remove("in-a-but-not-in-b.txt")
+	os.Remove("in-b-but-not-in-a.txt")
+	os.Remove("in-both-a-and-b.txt")
 }

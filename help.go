@@ -34,6 +34,7 @@ Comand line options:
 -A=fileA.csv			File A name
 -B=fileB.csv			File B name
 -debug=true			Debug the script					
+-trash				To delete the 3 files created by ecompare
 
 `
 	fmt.Printf(textToPrint)

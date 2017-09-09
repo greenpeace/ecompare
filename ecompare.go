@@ -20,6 +20,7 @@ func main() {
 	defer timeTrack(time.Now(), "main")
 
 	help := flag.Bool("help", false, "Display help")
+	trash := flag.Bool("trash", false, "Delete files created by ecompare")
 	data := flag.String("data", "emails", "What to compare")
 	filenameA := flag.String("A", "a.txt", "File to do the operations")
 	filenameB := flag.String("B", "b.txt", "File to do the operations")
@@ -28,6 +29,8 @@ func main() {
 
 	if *help == true {
 		helpMe()
+	} else if *trash == true {
+		trashFiles()
 	} else {
 
 		// Read the files to strings
