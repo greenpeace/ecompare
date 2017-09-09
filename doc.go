@@ -29,9 +29,9 @@ Compare CSV files
 Download both files as csvs to the same folder as the script. Then, using the command line run the script as:
 
     ./ecompare -data=emails -A=fileA.csv -B=fileB.csv
-    
+
     -data specifies the type of data to compare. It can be emails, sha256 or dni (Spanish ID numbers)
-    
+
     -A and -B specify the names of both files.
 
 Get details about the comparison
@@ -65,6 +65,10 @@ in-both-a-and-b.txt
 The filenames describe it's content and running the script again will overwrite this 3 files.
 
 Open this files with your plain/code text editor and investigate the inconsistencies in both your CRM and mailing programs.
+
+To delete the 3 files created by ecompare:
+
+    ./ecompare -trash
 
 .
 */

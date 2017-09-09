@@ -59,6 +59,14 @@ The filenames describe it's content and running the script again will overwrite 
 
 Open this files with your plain/code text editor and investigate the inconsistencies in both your CRM and mailing programs. 
 
+#### Delete files created by ecompare
+
+To delete the 3 files created by ecompare:
+
+```
+./ecompare -trash
+```
+
 ## Install
 
 1. Download the [latest version of the binary code](https://github.com/greenpeace/ecompare/releases/) for your operating system to your desktop folder.
