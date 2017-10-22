@@ -44,7 +44,7 @@ func searchInStringToMap(total string, expression string) map[string]bool {
 
 // searchInStringToMapCS Reads a string and returns all matches (case sensitive) in the regular expression as map keys
 func searchInStringToMapCS(total string, expression string) map[string]bool {
-	defer timeTrack(time.Now(), "searchInStringToMap")
+	defer timeTrack(time.Now(), "searchInStringToMapCS")
 	r, err := regexp.Compile(expression)
 	if err != nil {
 		panic(err)
