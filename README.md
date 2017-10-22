@@ -31,7 +31,7 @@ Download both files as csvs to the same folder as the script. Then, using the co
 ./ecompare -data=emails -A=fileA.csv -B=fileB.csv
 ```
 
-* `-data` specifies the type of data to compare. It can be `emails`, `sha256` or `dni` (Spanish ID numbers)
+* `-data` specifies the type of data to compare. It can be `emails`, `sha256`, `urls` or `dni` (Spanish ID numbers)
 * `-A` and `-B` specify the names of both files.
 
 #### Get details about the comparison

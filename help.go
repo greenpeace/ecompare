@@ -10,7 +10,7 @@ func helpMe() {
 
 Script to compare unique data from two text files, named A and B
 
-- unique data includes emails or sha256
+- unique data includes emails, sha256, urls or dni
 - text files include csv, txt, sql or html
 
 Use the options as in this example:
@@ -30,7 +30,7 @@ Each time the script runs it overwrites this 3 files.
 Comand line options:
 
 -help				Display this help
--data=emails			What to compare in the files. It can be "emails", "sha256" or "dni". By default it compares emails.
+-data=emails			What to compare in the files. It can be "emails", "sha256", "urls" or "dni". By default it compares emails.
 -A=fileA.csv			File A name
 -B=fileB.csv			File B name
 -debug=true			Debug the script					
