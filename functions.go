@@ -42,6 +42,21 @@ func searchInStringToMap(total string, expression string) map[string]bool {
 	return a
 }
 
+// searchInStringToMapCS Reads a string and returns all matches (case sensitive) in the regular expression as map keys
+func searchInStringToMapCS(total string, expression string) map[string]bool {
+	defer timeTrack(time.Now(), "searchInStringToMapCS")
+	r, err := regexp.Compile(expression)
+	if err != nil {
+		panic(err)
+	}
+	allMatches := r.FindAllString(total, -1)
+	a := make(map[string]bool)
+	for _, v := range allMatches {
+		a[v] = false
+	}
+	return a
+}
+
 // Compare Compares 2 maps with words as what to search and boleans false value. Transforms in true when the key exists in the other map.
 func Compare(a map[string]bool, b map[string]bool) (map[string]bool, map[string]bool) {
 	defer timeTrack(time.Now(), "Compare")

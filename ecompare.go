@@ -13,6 +13,8 @@ const shaRegex string = `[A-Fa-f0-9]{64}`
 
 const dninieRegex string = `[A-z]?\d{7,8}[TRWAGMYFPDXBNJZSQVHLCKEtrwagmyfpdxbnjzsqvhlcke]`
 
+const urlsRegex string = `https?://([\da-z\.-]+)\.([a-z\.]{2,6})([/\w \.-]*)*/?`
+
 var debug *bool
 
 func main() {
@@ -49,6 +51,9 @@ func main() {
 		case "dni":
 			aMap = searchInStringToMap(aFile, dninieRegex)
 			bMap = searchInStringToMap(bFile, dninieRegex)
+		case "urls":
+			aMap = searchInStringToMapCS(aFile, urlsRegex)
+			bMap = searchInStringToMapCS(bFile, urlsRegex)
 		default:
 			aMap = searchInStringToMap(aFile, emailRegex)
 			bMap = searchInStringToMap(bFile, emailRegex)
