@@ -15,7 +15,7 @@
 
 **ecompare** is a command line script. To get help type in the command line:
 
-```
+```bash
 ./ecompare --help
 ```
 
@@ -27,7 +27,7 @@ You'll need to export csvs with supporter data in Engaging Networks and create s
 
 Download both files as csvs to the same folder as the script. Then, using the command line run the script as:
 
-```
+```bash
 ./ecompare -data=emails -A=fileA.csv -B=fileB.csv
 ```
 
@@ -38,7 +38,7 @@ Download both files as csvs to the same folder as the script. Then, using the co
 
 When running the script you'll get a quick report like this:
 
-```
+```bash
 WHAT HAPPENED?
 File A: fileA.csv
 File B: fileB.csv
@@ -52,28 +52,29 @@ In both fileA.csv and fileB.csv : 214 emails
 And the script always creates 3 files in the current folder with the results:
 
 1. *in-a-but-not-in-b.txt*
-2. *in-b-but-not-in-a.txt*
-3. *in-both-a-and-b.txt*
+1. *in-b-but-not-in-a.txt*
+1. *in-both-a-and-b.txt*
 
 The filenames describe it's content and running the script again will overwrite this 3 files.
 
-Open this files with your plain/code text editor and investigate the inconsistencies in both your CRM and mailing programs. 
+Open this files with your plain/code text editor and investigate the inconsistencies in both your CRM and mailing programs.
 
 #### Delete files created by ecompare
 
 To delete the 3 files created by ecompare:
 
-```
+```bash
 ./ecompare -trash
 ```
 
 ## Install
 
 1. Download the [latest version of the binary code](https://github.com/greenpeace/ecompare/releases/) for your operating system to your desktop folder.
-2. Unzip it to the desktop folder. *(Optionally copy the executable file to a folder in your [path](https://goo.gl/oLzTGw))*
-3. To test your install, open the command line, go to the desktop folder and test it with the command: 
-  * `./ecompare --help` *(Mac or Linux)*
-  * `./ecompare.exe --help` *(Windows)*
+1. Unzip it to the desktop folder. *(Optionally copy the executable file to a folder in your [path](https://goo.gl/oLzTGw))*
+1. To test your install, open the command line, go to the desktop folder and test it with the command:
+
+* `./ecompare --help` *(Mac or Linux)*
+* `./ecompare.exe --help` *(Windows)*
 
 ## Install from the source code
 
