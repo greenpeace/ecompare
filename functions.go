@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
@@ -20,6 +21,10 @@ func timeTrack(start time.Time, name string) {
 // fileToString Reads a file into a sting.
 func fileToString(fileName string) string {
 	defer timeTrack(time.Now(), "fileToString")
+	if _, err := os.Stat(fileName); os.IsNotExist(err) {
+		fmt.Println("ERROR: The file/path", fileName, "does not exist here")
+		os.Exit(-1)
+	}
 	dat, err := ioutil.ReadFile(fileName)
 	if err != nil {
 		panic(err)
