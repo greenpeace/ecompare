@@ -15,7 +15,7 @@ Script to compare unique data from two text files, named A and B
 
 Use the options as in this example:
 
-./compare -data=emails -A=fileA.csv -B=fileB.csv
+./ecompare -data=emails -A=fileA.csv -B=fileB.csv
 
 This script always creates 3 files in the current folder with the results. 
 
