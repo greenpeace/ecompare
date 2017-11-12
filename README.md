@@ -69,7 +69,7 @@ To delete the 3 files created by ecompare:
 
 ## Install
 
-1. Download the [latest version of the binary code](https://github.com/greenpeace/ecompare/releases/) for your operating system to your desktop folder.
+1. Download the [latest version of the binary code](https://github.com/greenpeace/gpes-ecompare/releases/) for your operating system to your desktop folder.
 1. Unzip it to the desktop folder. *(Optionally copy the executable file to a folder in your [path](https://goo.gl/oLzTGw))*
 1. To test your install, open the command line, go to the desktop folder and test it with the command:
 
@@ -78,11 +78,11 @@ To delete the 3 files created by ecompare:
 
 ## Install from the source code
 
-This script is also provided as [source code](https://github.com/greenpeace/ecompare/) in [Go](https://golang.org/dl/). To install:
+This script is also provided as [source code](https://github.com/greenpeace/gpes-ecompare/) in [Go](https://golang.org/dl/). To install:
 
 ```bash
-go get github.com/greenpeace/ecompare
-go install github.com/greenpeace/ecompare
+go get github.com/greenpeace/gpes-ecompare
+go install github.com/greenpeace/gpes-ecompare
 ```
 
 
